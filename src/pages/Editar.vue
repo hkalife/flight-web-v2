@@ -25,7 +25,7 @@
 
       <q-card-section>
         <q-btn class="q-mt-lg q-mr-lg" label="Voltar" @click="voltarParaLista()" />
-        <q-btn color="primary" class="q-mt-lg" label="Cadastrar" @click="atualizar()" />
+        <q-btn color="primary" class="q-mt-lg" label="Editar" @click="atualizar()" />
       </q-card-section>
     </q-card>
   </q-page>
@@ -76,6 +76,7 @@ export default {
             textColor: 'white',
             message: 'Aeroporto atualizado com sucesso!'
           })
+          document.location.reload(true)
         }).catch(() => {
           this.$q.notify({
             type: 'negative',
