@@ -73,7 +73,7 @@ export default {
             textColor: 'white',
             message: 'Aeroporto criado com sucesso!'
           })
-          document.location.reload(true)
+          this.voltarParaLista()
         }).catch(() => {
           this.$q.notify({
             type: 'negative',

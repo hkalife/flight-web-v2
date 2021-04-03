@@ -58,6 +58,13 @@ export default {
     Adicionar,
     Editar
   },
+  watch: {
+    currentPage: function () {
+      if (this.currentPage === 'lista') {
+        this.fetchAirports()
+      }
+    }
+  },
   methods: {
     fetchAirports () {
       this.$axios.get(this.apiUrl).then(response => {
