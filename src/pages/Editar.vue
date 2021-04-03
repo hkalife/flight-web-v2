@@ -91,8 +91,6 @@ export default {
     }
   },
   mounted () {
-    console.log('oi')
-    console.log(this.airport)
     this.nome = this.airport.nome
     this.icao = this.airport.icao
     this.iata = this.airport.iata

@@ -62,7 +62,6 @@ export default {
     fetchAirports () {
       this.$axios.get(this.apiUrl).then(response => {
         this.currentAirports = response.data
-        console.log(this.currentAirports)
       }).catch(err => {
         console.log(err)
       })
