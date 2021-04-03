@@ -5,11 +5,6 @@
         <q-toolbar-title>
           Flight Web
         </q-toolbar-title>
-
-        <q-tabs v-model="tab">
-          <q-tab name="listar" label="Ver lista" />
-          <q-tab name="adicionar" label="Adicionar" />
-        </q-tabs>
       </q-toolbar>
     </q-header>
 
