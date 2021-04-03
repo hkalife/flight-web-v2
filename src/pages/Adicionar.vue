@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex flex-center">
-    <h1>Listar</h1>
+    <h1>Adicionar</h1>
   </q-page>
 </template>
 
