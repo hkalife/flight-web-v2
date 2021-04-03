@@ -30,7 +30,6 @@ export default {
   },
   watch: {
     tab: function () {
-      console.log(this.tab)
       if (this.tab === 'listar') {
         this.$router.push('/')
       } else {
